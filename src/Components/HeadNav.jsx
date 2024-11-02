@@ -95,8 +95,10 @@ const HeadNav = () => {
           `}
         >
           <div className="px-2 pt-2 pb-3 space-y-1">
+            <a href="" className='text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'>Sign Up</a>
+            <a href="" className='text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'>Log In</a>
             {navLinks.map((link) => {
-                return <a key={link.label} href={link.href} className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">{link.label}</a>
+              return <a key={link.label} href={link.href} className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">{link.label}</a>
             })}
 
 
