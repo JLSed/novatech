@@ -18,7 +18,7 @@ const HeadNav = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrolled]);
 
-  // Close mobile menu when window is resized to desktop size
+  // close mobile menu when window is resized to desktop size
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) { // md breakpoint
@@ -45,7 +45,7 @@ const HeadNav = () => {
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <img className="text-background font-bold text-xl w-10" src={logo} alt="Logo" />
+            <img className="text-background font-bold text-xl w-10 cursor-pointer" src={logo} alt="Logo" />
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
