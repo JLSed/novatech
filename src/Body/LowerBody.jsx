@@ -20,8 +20,8 @@ const LowerBody = () => {
             </div>
             <img src={getStartedImg} alt="get-started with novatech" className='brightness-50 object-cover h-[500px] w-full' />
         </div>
-        <div className='p-14 mt-20 max-w-[2000px]'>
-            <div className='bg-primary flex p-10 gap-5 rounded-xl'>
+        <div className='p-14 mt-20 max-w-[2000px] max-sm:max-w-full max-sm:p-0'>
+            <div className='bg-primary flex p-10 gap-5 rounded-xl max-sm:rounded-none'>
                 <div className='flex flex-col gap-6 w-1/2 max-sm:w-full'>
                     <h1 className='text-secondary font-bold text-5xl'>Unlock Your Potential and Become One of Us</h1>
                     <p className='text-background'>Join our community of skilled freelancers ready to bring your ideas and service to life. Sign up today as our freelancer and start collaborating with top talent in the tech industry.</p>

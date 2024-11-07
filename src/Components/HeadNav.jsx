@@ -36,10 +36,10 @@ const HeadNav = () => {
         fixed top-0 left-0 right-0 z-50
         transition-all duration-300 ease-in-out
         ${scrolled 
-          ? 'bg-thirdary shadow-lg' 
+          ? 'bg-primary shadow-lg' 
           : 'bg-transparent'
         }
-        ${isMobileMenuOpen ? 'bg-black' : ''}
+        ${isMobileMenuOpen ? 'bg-primary' : ''}
       `}
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,12 +51,12 @@ const HeadNav = () => {
             <div className="ml-10 flex items-baseline space-x-4">
             {/* nav */}
                 {navLinks.map((link) => {
-                    return <a key={link.label} href={link.href} className="text-background hover:text-gray-400 px-3 py-2 rounded-md text-base font-medium">{link.label}</a>
+                    return <a key={link.label} href={link.href} className="text-background hover:text-secondary px-3 py-2 rounded-md text-base font-medium transition-all">{link.label}</a>
                 })}
             {/* main button */}
                 <div className="flex items-baseline space-x-4">
-                    <button className="rounded-xl border-2 border-background text-background p-2">Log In</button>
-                    <button className={`rounded-xl border-2  text-background p-2 transition-all bg-thirdary ${scrolled ? 'border-background' : 'border-thirdary'} `}>Sign Up</button>
+                    <button className="rounded-sm border-1 border-background text-background p-2 transition-all hover:bg-thirdary hover:border-secondary hover:text-secondary hover:rounded-md">Log In</button>
+                    <button className={`rounded-sm border-1  text-background p-2 transition-all bg-thirdary ${scrolled ? 'border-thirdary' : 'border-thirdary'} hover:bg-thirdary hover:border-background hover:text-background hover:rounded-md `}>Sign Up</button>
                 </div>
             </div>
           </div>

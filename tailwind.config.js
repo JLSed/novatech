@@ -17,6 +17,9 @@ export default {
         cus1: "1px 3px 4px 3px rgba(94, 94, 94 , 0.25)",
         cus2: "0px 4px 9.5px 1px rgba(0, 0, 0 , 0.25)",
       },
+      borderWidth: {
+        '1': '1px',
+      }
     },
   },
   plugins: [],

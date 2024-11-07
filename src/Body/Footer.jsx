@@ -3,6 +3,7 @@ import twitterLogo from '../assets/twitter.png'
 import linkedinLogo from '../assets/linkedin-logo.png'
 import youtubeLogo from '../assets/youtube.png'
 import instaLogo from '../assets/instagram.png'
+import fbLogo from '../assets/fb-logo.png'
 
 const Footer = () => {
   return (
@@ -14,6 +15,7 @@ const Footer = () => {
                 <img src={linkedinLogo} alt="" className='object-contain cursor-pointer' />
                 <img src={youtubeLogo} alt="" className='object-contain cursor-pointer' />
                 <img src={instaLogo} alt="" className='object-contain cursor-pointer' />
+                <img src={fbLogo} alt="" className='object-contain cursor-pointer' />
             </div>
         </div>
         <div className='text-background'>
