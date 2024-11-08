@@ -1,16 +1,13 @@
-import UpperBody from "./Body/UpperBody"
-import MiddleBody from "./Body/MiddleBody"
-import LowerBody from "./Body/LowerBody";
-import Footer from "./Body/Footer";
+import ParentBody from "./Body/ParentBody";
+import LoginPage from "./Body/LoginPage";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
 	return (
-	<main className="min-h-dvh">
-		<UpperBody />
-		<MiddleBody />
-		<LowerBody />
-		<Footer />
-	</main>
+		<Routes>
+			<Route path="/" element={<ParentBody />} />
+			<Route path="/login" element={<LoginPage />} />
+		</Routes>
 	);
 }
 

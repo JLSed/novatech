@@ -12,6 +12,7 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
+        afacad: ["Afacad"],
       },
       boxShadow: {
         cus1: "1px 3px 4px 3px rgba(94, 94, 94 , 0.25)",

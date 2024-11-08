@@ -1,10 +1,15 @@
+import LoginPage from '../Body/LoginPage';
+
 import logo from '../assets/Logo.svg';
 import { useState, useEffect } from 'react';
 import { navLinks } from "../Constants";
 
+import {Link} from 'react-router-dom';
+
 const HeadNav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,7 +36,7 @@ const HeadNav = () => {
   }, []);
 
   return (
-    <nav
+          <nav
       className={`
         fixed top-0 left-0 right-0 z-50
         transition-all duration-300 ease-in-out
@@ -44,8 +49,9 @@ const HeadNav = () => {
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
+          <div className="flex items-center gap-3">
             <img className="text-background font-bold text-xl w-10 cursor-pointer" src={logo} alt="Logo" />
+            <h1 className='font-afacad font-bold text-2xl text-background'>NovaTech</h1>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
@@ -55,8 +61,8 @@ const HeadNav = () => {
                 })}
             {/* main button */}
                 <div className="flex items-baseline space-x-4">
-                    <button className="rounded-sm border-1 border-background text-background p-2 transition-all hover:bg-thirdary hover:border-secondary hover:text-secondary hover:rounded-md">Log In</button>
-                    <button className={`rounded-sm border-1  text-background p-2 transition-all bg-thirdary ${scrolled ? 'border-thirdary' : 'border-thirdary'} hover:bg-thirdary hover:border-background hover:text-background hover:rounded-md `}>Sign Up</button>
+                    <Link className="rounded-sm border-1 border-background text-background p-2 transition-all hover:bg-thirdary hover:border-secondary hover:text-secondary hover:rounded-md" to='/login'>Log in</Link>
+                    <Link className={`rounded-sm border-1  text-background p-2 transition-all bg-thirdary ${scrolled ? 'border-thirdary' : 'border-thirdary'} hover:bg-thirdary hover:border-background hover:text-background hover:rounded-md `}>Sign Up</Link>
                 </div>
             </div>
           </div>
@@ -85,7 +91,7 @@ const HeadNav = () => {
           className={`
             md:hidden
             transition-all duration-300 ease-in-out
-            bg-thirdary
+            bg-primary
             rounded-lg
             ${isMobileMenuOpen 
               ? 'max-h-96 opacity-100' 
