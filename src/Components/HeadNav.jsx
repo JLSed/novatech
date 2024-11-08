@@ -1,5 +1,3 @@
-import LoginPage from '../Body/LoginPage';
-
 import logo from '../assets/Logo.svg';
 import { useState, useEffect } from 'react';
 import { navLinks } from "../Constants";
@@ -54,15 +52,15 @@ const HeadNav = () => {
             <h1 className='font-afacad font-bold text-2xl text-background'>NovaTech</h1>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="font-outfit ml-10 flex items-baseline space-x-4">
             {/* nav */}
                 {navLinks.map((link) => {
-                    return <a key={link.label} href={link.href} className="text-background hover:text-secondary px-3 py-2 rounded-md text-base font-medium transition-all">{link.label}</a>
+                    return <a key={link.label} href={link.href} className="text-background hover:text-secondary px-3 py-2 rounded-md text-base transition-all">{link.label}</a>
                 })}
             {/* main button */}
                 <div className="flex items-baseline space-x-4">
                     <Link className="rounded-sm border-1 border-background text-background p-2 transition-all hover:bg-thirdary hover:border-secondary hover:text-secondary hover:rounded-md" to='/login'>Log in</Link>
-                    <Link className={`rounded-sm border-1  text-background p-2 transition-all bg-thirdary ${scrolled ? 'border-thirdary' : 'border-thirdary'} hover:bg-thirdary hover:border-background hover:text-background hover:rounded-md `}>Sign Up</Link>
+                    <Link className={`rounded-sm border-1 border-secondary  text-primary p-2 transition-all bg-secondary hover:bg-thirdary hover:border-secondary hover:text-secondary hover:rounded-lg `}>Sign Up</Link>
                 </div>
             </div>
           </div>
@@ -100,7 +98,7 @@ const HeadNav = () => {
             overflow-hidden
           `}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="font-roboto px-2 pt-2 pb-3 space-y-1">
             <a href="" className='text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'>Sign Up</a>
             <a href="" className='text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'>Log In</a>
             {navLinks.map((link) => {

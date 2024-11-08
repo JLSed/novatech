@@ -5,8 +5,8 @@ const QualityCard = ({header, subheader, img}) => {
     <div className="flex items-start w-[500px] gap-3">
         <img src={img} alt={header} className="h-[45px]" />
         <div className=" flex flex-col">
-            <h1 className="font-bold text-primary text-2xl">{header}</h1>
-            <p className="text-thirdary pl-5">{subheader}</p>
+            <h1 className="font-poppins font-bold text-primary text-2xl">{header}</h1>
+            <p className="font-roboto text-primary pl-5">{subheader}</p>
         </div>
     </div>
   )

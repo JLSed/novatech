@@ -1,5 +1,3 @@
-import HeadNav from "../Components/HeadNav"
-
 const LoginPage = () => {
   return (
     <div>

@@ -10,8 +10,8 @@ const FeedbackCard = ({name,statement}) => {
             <img src={star} alt="" className='object-contain' />
             <img src={star} alt="" className='object-contain' />
         </div>
-        <h1 className='text-primary font-bold'>{name}</h1>
-        <p className='text-thirdary'>{statement}</p>
+        <h1 className='font-outfit text-primary font-bold'>{name}</h1>
+        <p className='font-poppins text-thirdary'>{statement}</p>
     </div>
   )
 }

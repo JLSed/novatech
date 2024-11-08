@@ -7,7 +7,7 @@ import fbLogo from '../assets/fb-logo.png'
 
 const Footer = () => {
   return (
-    <footer className='bg-thirdary flex justify-start gap-32 p-20 max-sm:flex-col max-sm:mt-auto'>
+    <footer className='font-roboto [&_h1]:font-poppins bg-thirdary flex justify-start gap-32 p-20 max-sm:flex-col max-sm:mt-auto'>
         <div className='w-fit'>
             <img src={logo} alt="Logo" className='object-contain w-[52px] cursor-pointer' />
             <div className='h-[24px] flex gap-4 w-fit mt-10'>
