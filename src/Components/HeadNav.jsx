@@ -59,8 +59,8 @@ const HeadNav = () => {
                 })}
             {/* main button */}
                 <div className="flex items-baseline space-x-4">
-                    <Link className="rounded-sm border-1 border-background text-background p-2 transition-all hover:bg-thirdary hover:border-secondary hover:text-secondary hover:rounded-md" to='/login'>Log in</Link>
-                    <Link className={`rounded-sm border-1 border-secondary  text-primary p-2 transition-all bg-secondary hover:bg-thirdary hover:border-secondary hover:text-secondary hover:rounded-lg `}>Sign Up</Link>
+                    <Link className="rounded-sm border-1 border-background text-background p-2 transition-all hover:bg-thirdary hover:border-secondary hover:text-secondary" to='/login'>Log in</Link>
+                    <Link className={`rounded-sm border-1 border-secondary  text-primary p-2 transition-all bg-secondary hover:bg-thirdary hover:border-secondary hover:text-secondary `}>Sign Up</Link>
                 </div>
             </div>
           </div>
