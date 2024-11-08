@@ -11,7 +11,7 @@ const UpperBody = () => {
     <section className="flex flex-col">
         <HeadNav />
         <div className="flex relative flex-col">
-            <img className="h-[800px] w-full object-cover max-sm:h-[400px]" src={bg1} alt="hello" />
+            <img className="h-[800px] w-full brightness-75 object-cover max-sm:h-[400px]" src={bg1} alt="hello" />
             <div className="absolute flex flex-col bottom-0 left-0 right-0 h-96 max-sm:h-52">
                 <h1 className="z-10 ml-20 text-accent text-6xl font-poppins font-bold max-sm:text-4xl xl:text-7xl max-sm:ml-10">Connecting Filipinos <br/> with the Best Solution</h1>
                 <p className="z-10 ml-20 text-background text-wrap font-roboto w-2/4 mt-2 max-sm:text-xs xl:text-lg max-sm:ml-10">At NovaTech, we connect you with top-notch tech professionals ready to elevate your issues. Whether you need virtual assistance or hands-on support, our platform is designed to meet your unique needs.</p>
